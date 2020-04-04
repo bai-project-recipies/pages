@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-#####Participants:
+## Participants:
 Justyna Pietryga \
 Michał Rosicki \
 Marek Nalepka
