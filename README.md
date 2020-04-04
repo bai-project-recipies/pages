@@ -2,6 +2,11 @@
 
 > A Vue.js project
 
+#####Participants:
+Justyna Pietryga \
+Michał Rosicki \
+Marek Nalepka
+
 ## Build Setup
 
 ``` bash
