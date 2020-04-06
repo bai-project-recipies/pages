@@ -1,15 +1,21 @@
 <template>
   <v-app id=”app”>
+    <NavigationComponent/>
+    <v-content>
+    </v-content>
   </v-app>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import NavigationComponent from "./components/NavigationComponent";
+
+  export default {
+    name: 'app',
+    components: {NavigationComponent},
+    data() {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
     }
   }
-}
 </script>
