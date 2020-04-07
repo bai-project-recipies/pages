@@ -1,7 +1,7 @@
 <template>
   <v-app id=”app”>
     <NavigationComponent/>
-    <RecipieComponent example="Tutaj tekst"/>
+    <RecipiesComponent example="Tutaj tekst"/>
     <v-content>
     </v-content>
   </v-app>
@@ -9,11 +9,11 @@
 
 <script>
   import NavigationComponent from "./components/NavigationComponent";
-  import RecipieComponent from "./components/RecipieComponent";
+  import RecipiesComponent from "./components/RecipiesComponent";
 
   export default {
     name: 'app',
-    components: {RecipieComponent, NavigationComponent},
+    components: {RecipiesComponent, NavigationComponent},
     data() {
       return {
         msg: 'Welcome to Your Vue.js App'
