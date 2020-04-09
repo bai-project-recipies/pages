@@ -1,0 +1,31 @@
+.RecipiesComponent {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.search-panel{
+  display: flex;
+  flex-direction: column;
+  /*flex-flow: row;*/
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipes-container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
