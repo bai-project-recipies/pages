@@ -1,9 +1,11 @@
 <template>
   <div class="FormCriteriaCheckBoxComponent ml-2 mb-2">
     <div class="collapsed-form-item">
-      <b-button v-b-toggle="id + '-toggle'" size="sm" variant="secondary" class="btn-block">{{toggleText}}</b-button>
+      <b-button v-b-toggle="id + '-toggle'" size="sm" variant="secondary" class="btn-block">{{toggleText}}
+        <b-icon icon="arrows-collapse" class="justify-content-end"/>
+      </b-button>
       <b-collapse :id="id + '-toggle'" class="mt-2">
-        <b-form-group class="col-12" :id="id" :label="label" label-for="input-3">
+        <b-form-group :id="id" :label="label" label-for="input-3">
           <b-form-checkbox-group
             :options="options"
             class="mb-3"

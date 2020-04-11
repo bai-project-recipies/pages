@@ -1,9 +1,13 @@
 <template>
   <div class="RecipeSearchFormComponent ml-md-4">
+    <b-button class="" v-b-toggle.filter size="sm" style="min-width: 7rem" variant="primary">
+      <b-icon icon="filter-left"/> Filter <b-icon icon="arrows-collapse"/>
+    </b-button>
+    <b-collapse visible id="filter" class="mt-2">
       <h4 class="text-center mb-5">Search criteria</h4>
 
       <b-form class="row justify-content-center" @submit="onSubmit" @reset="onReset">
-        <div id="checkbox-container" class="d-flex flex-wrap justify-content-center">
+        <div id="checkbox-container" class="d-flex flex-wrap flex-column justify-content-center col-12">
           <FormCriteriaCheckBoxComponent id="cuisine"
                                          :options="supportedCuisines"
                                          label="Cuisine: "
@@ -38,15 +42,16 @@
             step="1"/>
         </b-card>
 
-        <b-button class="col-12 mt-md-4 mt-sm-2" type="submit" variant="primary">Submit</b-button>
+        <b-button class="col-12 mt-md-4 mt-sm-2 ml-5" type="submit" variant="primary">Submit</b-button>
       </b-form>
+    </b-collapse>
   </div>
 </template>
 
 <script>
-  import '../styles/_RecipeSearchFormComponent.css'
-  import FormCriteriaCheckBoxComponent from "./FormCriteriaCheckBoxComponent.vue";
-  import {baseRecipiesApiUrl, getWithEndpoint} from '../shared/constants'
+  import '../../styles/_RecipeSearchFormComponent.css'
+  import FormCriteriaCheckBoxComponent from "../shared/FormCriteriaCheckBoxComponent.vue";
+  import {baseRecipiesApiUrl, getWithEndpoint} from '../../shared/constants'
 
   export default {
     components: {FormCriteriaCheckBoxComponent},

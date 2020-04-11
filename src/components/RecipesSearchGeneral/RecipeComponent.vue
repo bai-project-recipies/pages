@@ -1,7 +1,6 @@
 <template>
   <div class="RecipeComponent">
     <b-card v-bind:title="title"
-            tag="recipe"
             v-bind:img-src="imageUrl"
             img-alt="Image"
             img-top
@@ -18,7 +17,7 @@
 </template>
 
 <script>
-  import {baseRecipiesApiPhotosUrl} from '../shared/constants'
+  import {baseRecipiesApiPhotosUrl} from '../../shared/constants'
 
   export default {
     data() {

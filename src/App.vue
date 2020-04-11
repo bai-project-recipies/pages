@@ -9,7 +9,7 @@
 
 <script>
   import NavigationComponent from "./components/NavigationComponent";
-  import RecipiesComponent from "./components/RecipiesComponent";
+  import RecipiesComponent from "./components/RecipesSearchGeneral/RecipiesComponent";
 
   export default {
     name: 'app',
