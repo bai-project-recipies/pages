@@ -1,12 +1,11 @@
 <template>
   <div class="RecipeComponent">
     <b-card v-bind:title="title"
-      tag="recipe"
-      v-bind:img-src="imageUrl"
-      img-alt="Image"
-      img-top
-      class="mb-3"
-      style="min-width: 15rem; max-width: 20rem; height: 37rem" img-height="300rem">
+            v-bind:img-src="imageUrl"
+            img-alt="Image"
+            img-top
+            class="mb-1 mr-1"
+            style="min-width: 15rem; max-width: 20rem; height: 37rem" img-height="300rem">
       <!--      <b-img :src="imageUrl" center fluid rounded="10"/>-->
       <b-card-text>
         <p class="information">Ready in minutes: {{readyInMinutes}}</p>
@@ -18,8 +17,7 @@
 </template>
 
 <script>
-  import {baseRecipiesApiPhotosUrl} from '../shared/constants'
-  import '../styles/_RecipeComponent.css'
+  import {baseRecipiesApiPhotosUrl} from '../../shared/constants'
 
   export default {
     data() {
