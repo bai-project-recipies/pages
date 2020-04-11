@@ -6,7 +6,8 @@
     <b-collapse visible id="filter" class="mt-2">
       <h4 class="text-center mb-5">Search criteria</h4>
 
-      <b-form class="row justify-content-center" @submit="onSubmit" @reset="onReset">
+      <b-form-input v-model="form.query" id="query" type="text" placeholder="Enter specific meal or leave (e.x. burger)"/>
+      <b-form class="row justify-content-center" @submit="onSubmit">
         <div id="checkbox-container" class="d-flex flex-wrap flex-column justify-content-center col-12">
           <FormCriteriaCheckBoxComponent id="cuisine"
                                          :options="supportedCuisines"
@@ -34,12 +35,8 @@
 
         <b-card id="recipes-number">
           <label>Number of recipes</label>
-          <b-form-spinbutton
-            id="number"
-            v-model="form.number"
-            min="1"
-            max="30"
-            step="1"/>
+          <b-form-input id="range-1" v-model="form.number" type="range" min="1" max="100" step="1"/>
+          <div class="mt-2">Value: {{ form.number }}</div>
         </b-card>
 
         <b-button class="col-12 mt-md-4 mt-sm-2 ml-5" type="submit" variant="primary">Submit</b-button>
@@ -63,11 +60,12 @@
         supportedDiet: ['vegan', 'vegetarian', 'gluten free', 'ketogenic'],
         supportedIntolerances: ['dairy', 'egg', 'gluten', 'peanut', 'seafood', 'shellfish', 'soy'],
         form: {
+          query: '',
           intolerances: [],
           diet: [],
           cuisine: [],
           excludeIngredients: [],
-          number: 0,
+          number: 30,
         },
       }
     },
@@ -89,20 +87,12 @@
         evt.preventDefault()
         const url = new URL(`${baseRecipiesApiUrl}/search/`);
         url.searchParams.append('number', this.form.number);
+        url.searchParams.append('query', this.form.query);
         url.searchParams.append('cuisine', this.form.cuisine);
         url.searchParams.append('excludeIngredients', this.form.excludeIngredients);
         url.searchParams.append('intolerances', this.form.intolerances);
 
         this.$emit('setRequestUrl', getWithEndpoint(url))
-      },
-
-      onReset(evt) {
-        evt.preventDefault()
-        this.form.intolerances = []
-        this.form.diet = []
-        this.form.cuisine = []
-        this.form.excludeIngredients = []
-        this.form.number = 0
       },
     }
   }
