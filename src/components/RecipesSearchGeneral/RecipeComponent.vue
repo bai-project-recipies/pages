@@ -10,6 +10,7 @@
       <b-card-text>
         <p class="information">Ready in minutes: {{readyInMinutes}}</p>
         <p class="information">Servings: {{servings}}</p>
+        <p class="information">Likes: {{likes}}</p>
       </b-card-text>
       <b-button href="#" variant="primary" style="color: aliceblue">Go to recipe</b-button>
     </b-card>
@@ -17,7 +18,7 @@
 </template>
 
 <script>
-  import {baseRecipiesApiPhotosUrl} from '../../shared/constants'
+  import {baseRecipiesApiPhotosUrl, insertNewRow, getLikes} from '../../shared/constants';
 
   export default {
     data() {
@@ -36,6 +37,9 @@
     computed: {
       imageUrl: function () {
         return `${baseRecipiesApiPhotosUrl}${this.image}`
+      },
+      likes: function () {
+        return getLikes(this.id);
       }
     },
     mounted() {
