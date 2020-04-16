@@ -18,7 +18,8 @@
 </template>
 
 <script>
-  import {baseRecipiesApiPhotosUrl, insertNewRow, getLikes} from '../../shared/constants';
+  import {baseRecipiesApiPhotosUrl, insertNewRow, getLikes, dbTableUrl, dbCorsKey} from '../../shared/constants';
+  import axios from 'axios';
 
   export default {
     data() {
@@ -33,16 +34,29 @@
       servings: Number,
       image: String,
       imageUrls: Array,
+      likes: Number,
     },
     computed: {
       imageUrl: function () {
         return `${baseRecipiesApiPhotosUrl}${this.image}`
-      },
-      likes: function () {
-        return getLikes(this.id);
       }
     },
     mounted() {
+      let url = new URL(dbTableUrl + `?q={"recipe_id": ${this.id}}`);
+      let self = this
+      let headers = {
+          "content-type": "application/json",
+          "x-apikey": dbCorsKey,
+          "cache-control": "no-cache",
+      }
+      axios.get(url=url, {headers: headers})
+      .then(function(response){
+        if(response.data.length == 0){
+          self.likes = 0;
+        }else{
+          self.likes = response.data[0].likes;
+        }
+      })
     },
     created() {
     },
