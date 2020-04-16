@@ -58,7 +58,8 @@ export const getLikes = (recipe_id) => {
 
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
-      return this.responseText[0].likes;
+      console.log(recipe_id + " " + JSON.parse(this.responseText)[0].likes);
+      return JSON.parse(this.responseText)[0].likes;
     }
   });
 
