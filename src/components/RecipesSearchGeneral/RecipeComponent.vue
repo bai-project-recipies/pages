@@ -10,6 +10,7 @@
       <b-card-text>
         <p class="information">Ready in minutes: {{readyInMinutes}}</p>
         <p class="information">Servings: {{servings}}</p>
+        <p class="information">Likes: {{likes}} <button v-on:click="setLikes(id, likes+1)">Add Like</button></p>
       </b-card-text>
       <b-button href="#" variant="primary" style="color: aliceblue">Go to recipe</b-button>
     </b-card>
@@ -17,12 +18,14 @@
 </template>
 
 <script>
-  import {baseRecipiesApiPhotosUrl} from '../../shared/constants'
+  import {baseRecipiesApiPhotosUrl} from '../../shared/constants';
+  import {getLikes, setLikes} from '../../shared/DBHandling';
 
   export default {
     data() {
       return {
-        results: []
+        results: [],
+        likes: 0
       }
     },
     props: {
@@ -39,12 +42,18 @@
       }
     },
     mounted() {
+      getLikes(this.id)
+      .then(likes => this.likes = likes);
     },
     created() {
     },
     methods: {
       print: function () {
         console.log(this.id)
+      },
+      setLikes: function(id, likes){
+        setLikes(id, likes)
+        .then(likes => this.likes = likes);
       }
     }
   }
