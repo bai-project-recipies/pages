@@ -31,7 +31,6 @@
   import RecipeSearchByIngredientSearchFormComponent from "./RecipeSearchByIngredientSearchFormComponent";
   import RecipeIngredientsComponent from "./RecipeIngredientsComponent";
   import axios from "axios";
-  import {baseRecipiesApiUrl, getWithEndpoint} from "../../shared/constants";
 
   export default {
     name: 'RecipesByIngredients',
@@ -41,18 +40,11 @@
         results: [],
       }
     },
-    mounted() {
-      axios
-        .get(getWithEndpoint(new URL(`${baseRecipiesApiUrl}/findByIngredients`)))
-        .then(response => this.results = response.data.results)
-    },
     methods: {
       setRequestUrl: function (url) {
         axios
           .get(url)
-          .then(response => {
-            this.results = response.data
-          })
+          .then(response => {this.results = response.data})
       }
     }
   };
