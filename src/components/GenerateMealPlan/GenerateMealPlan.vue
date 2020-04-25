@@ -12,7 +12,8 @@
             <DayMealPlan title="Meal plan for one day - 3 meals" :meals="results.meals" :nutrients="results.nutrients"/>
           </div>
 
-          <div v-else>
+          <div v-else style="width: 90%">
+            <WeekMealPlan :week-plan="results.week"/>
           </div>
         </div>
       </div>
