@@ -27,12 +27,11 @@
   import axios from "axios";
   import GenerateMealPlanSearchFormComponent from "./GenerateMealPlanSearchFormComponent";
   import DayMealPlan from "./DayMealPlan";
-  import OneGeneratedMealPlan from "./OneGeneratedMealPlan";
   import WeekMealPlan from "./WeekMealPlan";
 
   export default {
     name: 'GenerateMealPlan',
-    components: {OneGeneratedMealPlan, GenerateMealPlanSearchFormComponent, DayMealPlan, WeekMealPlan},
+    components: {GenerateMealPlanSearchFormComponent, DayMealPlan, WeekMealPlan},
     data() {
       return {
         timeFrame: '',
