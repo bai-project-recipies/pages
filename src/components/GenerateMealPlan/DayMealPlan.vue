@@ -8,7 +8,7 @@
       Fat: {{nutrients.fat}} <br>
       Carbohydrates: {{nutrients.carbohydrates}}
     </p>
-    <div v-for="meal in meals" >
+    <div v-for="meal in meals" :key="meal">
       <OneGeneratedMealPlan :title="meal.title"
                             :readyInMinutes="meal.readyInMinutes"
                             :servings="meal.servings"

@@ -2,7 +2,7 @@
   <div class="WeekMealPlan mb-3">
     <h3>Meal plan for one week (3 meals per day)</h3>
     <div v-for="day in daysOfWeek" class="mt-3">
-      <b-card>
+      <b-card :key="day">
         <div class="row">
           <h4 class="col-11">{{day.toLocaleUpperCase()}}</h4>
           <b-button v-b-toggle="day + '-toggle'" class="col-1" size="sm"  variant="primary">Show proposal</b-button>

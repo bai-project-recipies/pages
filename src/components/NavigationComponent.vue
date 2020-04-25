@@ -9,7 +9,7 @@
           <b-navbar-nav class="left">
             <b-nav-item-dropdown text="Search recipies" right>
               <b-dropdown-item v-for="item in items">
-                <router-link :to="item.path">{{item.title}}</router-link>
+                <router-link :to="item.path" :key="item">{{item.title}}</router-link>
               </b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
