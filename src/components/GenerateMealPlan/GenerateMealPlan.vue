@@ -7,7 +7,8 @@
         <GenerateMealPlanSearchFormComponent @setRequestUrl="setRequestUrl" @setTimeFrame="setTimeFrame"/>
       </div>
       <div class="recipes d-flex flex-wrap justify-content-center" style="width: 100%">
-        <div v-if="results !== {} && results !== undefined" class="d-flex flex-wrap justify-content-center mt-10" style="width: 100%">
+        <div v-if="!isEmpty(results) && results !== undefined" class="d-flex flex-wrap justify-content-center mt-10"
+             style="width: 100%">
           <div v-if="timeFrame === 'day'" style="width: 90%">
             <DayMealPlan title="Meal plan for one day - 3 meals" :meals="results.meals" :nutrients="results.nutrients"/>
           </div>
@@ -16,6 +17,7 @@
             <WeekMealPlan :week-plan="results.week"/>
           </div>
         </div>
+        <div v-else><h4 class="mt-10 ml-10">No meal plans found or you have not generated one yet :(</h4></div>
       </div>
     </div>
   </div>
@@ -45,6 +47,13 @@
         axios
           .get(url)
           .then(response => this.results = response.data)
+      },
+      isEmpty: function (obj) {
+        for (let key in obj) {
+          if (obj.hasOwnProperty(key))
+            return false;
+        }
+        return true;
       }
     }
   };
