@@ -8,6 +8,7 @@ Vue.use(Router);
 
 export default new Router({
   mode: 'history',
+  base: '/bai-project-recipies/',
   routes: [
     {path: '/', name: 'Recipes', component: Recipes},
     {path: '/by-ingredients', name: 'RecipesByIngredients', component: RecipesByIngredient},
