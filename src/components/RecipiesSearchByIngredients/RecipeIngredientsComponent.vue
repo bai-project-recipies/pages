@@ -28,7 +28,6 @@
 </template>
 
 <script>
-  import {baseRecipiesApiPhotosUrl} from '../../shared/constants';
   import {getLikes, setLikes} from '../../shared/DBHandling';
 
   export default {
@@ -50,7 +49,7 @@
     },
     computed: {
       imageUrl: function () {
-        return `${baseRecipiesApiPhotosUrl}${this.image}`
+        return `${this.image}`
       }
     },
     mounted() {

@@ -1,7 +1,7 @@
 <template>
   <div class="WeekMealPlan mb-3">
     <h3>Meal plan for one week (3 meals per day)</h3>
-    <div v-for="day in daysOfWeek" class="mt-3">
+    <div v-for="day in daysOfWeek" v-bind:key="day" class="mt-3">
       <b-card :key="day">
         <div class="row">
           <h4 class="col-11">{{day.toLocaleUpperCase()}}</h4>
