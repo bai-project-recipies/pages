@@ -10,6 +10,7 @@
       <div class="recipes d-flex flex-wrap justify-content-center">
         <div v-if="results.length > 0" class="d-flex flex-wrap justify-content-center">
           <RecipeIngredientsComponent v-for="recipe in results"
+            v-bind:key="recipe.id"
             v-bind:title="recipe.title"
             v-bind:id="recipe.id"
             v-bind:usedIngredientCount="recipe.usedIngredientCount"
