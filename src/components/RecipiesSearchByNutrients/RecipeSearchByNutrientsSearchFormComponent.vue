@@ -11,7 +11,7 @@
           <b-icon icon="filter-left"/> Nutrients <b-icon icon="arrows-collapse"/>
         </b-button>
         <b-collapse id="nutrient-container" class="mt-2">
-          <span v-for="nutrient in form.nutrientValues">
+          <span v-for="nutrient in form.nutrientValues" v-bind:key="nutrient['key']">
             <b-row>
               <b-col sm="6">
                 <label>{{nutrient['key']}}</label>
@@ -36,17 +36,11 @@
 
 <script>
   import '../../styles/_RecipeSearchFormComponent.css'
-  import FormCriteriaCheckBoxComponent from "../shared/FormCriteriaCheckBoxComponent.vue";
   import {baseRecipiesApiUrl, getWithEndpoint} from '../../shared/constants'
 
   export default {
-    components: {FormCriteriaCheckBoxComponent},
     data() {
       return {
-        supportedNutrients: ['Carbs', 'Protein', 'Calories', 'Fat', 'Alcohol',
-          'Caffeine', 'Calcium', 'Cholesterol', 'SaturatedFat', 'VitaminA',
-          'VitaminC', 'VitaminD', 'VitaminE', 'VitaminB6', 'VitaminB12', 'Fiber',
-          'Iron', 'Sugar'],
         noNutrientsError: false,
         form: {
           selectedNutrients: [],
@@ -59,32 +53,8 @@
             {key: 'maxCalories', value: ''},
             {key: 'minFat', value:''},
             {key: 'maxFat', value: ''},
-            {key: 'minAlcohol', value:''},
-            {key: 'maxAlcohol', value: ''},
-            {key: 'minCaffeine', value:''},
-            {key: 'maxCaffeine', value: ''},
-            {key: 'minCalcium', value:''},
-            {key: 'maxCalcium', value: ''},
             {key: 'minCholesterol', value:''},
             {key: 'maxCholesterol', value: ''},
-            {key: 'minSaturatedFat', value:''},
-            {key: 'maxSaturatedFat', value: ''},
-            {key: 'minVitaminA', value:''},
-            {key: 'maxVitaminA', value: ''},
-            {key: 'minVitaminC', value:''},
-            {key: 'maxVitaminC', value: ''},
-            {key: 'minVitaminD', value:''},
-            {key: 'maxVitaminD', value: ''},
-            {key: 'minVitaminE', value:''},
-            {key: 'maxVitaminE', value: ''},
-            {key: 'minVitaminB6', value:''},
-            {key: 'maxVitaminB6', value: ''},
-            {key: 'minVitaminB12', value:''},
-            {key: 'maxVitaminB12', value: ''},
-            {key: 'minFiber', value:''},
-            {key: 'maxFiber', value: ''},
-            {key: 'minIron', value:''},
-            {key: 'maxIron', value: ''},
             {key: 'minSugar', value:''},
             {key: 'maxSugar', value: ''},
           ],
@@ -107,6 +77,7 @@
             searchParams += 1;
           }
         }
+        url.searchParams.append('number', this.form.number);
         if(searchParams>0){
           this.$emit('setRequestUrl', getWithEndpoint(url))
         }else{
