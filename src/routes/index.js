@@ -13,5 +13,6 @@ export default new Router({
     {path: '/', name: 'Recipes', component: Recipes},
     {path: '/by-ingredients', name: 'RecipesByIngredients', component: RecipesByIngredient},
     {path: '/generate-meal-plan', name: 'RecipesByIngredients', component: GenerateMealPlan}
+
   ]
 });
