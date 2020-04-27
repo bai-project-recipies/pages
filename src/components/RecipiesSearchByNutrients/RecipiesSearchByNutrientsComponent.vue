@@ -1,6 +1,6 @@
 <template>
   <div class="RecipiesComponent">
-    <h1 class="mb-3 ml-md-10 mt-md-7 text-center blue--text">Search Recipes - fast search <br></h1>
+    <h1 class="mb-3 ml-md-10 mt-md-7 text-center blue--text">Search Recipes - nutrients <br></h1>
     <div class="panel d-flex">
       <div class="filter-panel flex-fill">
         <RecipeSearchFormComponent @setRequestUrl="setRequestUrl"/>
