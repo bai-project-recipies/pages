@@ -16,7 +16,10 @@
                            v-bind:image="recipe.image"
                            v-bind:imageUrls="recipe.imageUrls"/>
         </div>
-        <div v-else><h4 class="mt-10 ml-10">No recipes found</h4></div>
+        <div v-else style="margin-top: 1rem; text-align: center;">
+          <h4 class="mt-10 ml-10">Unfortunately we have not found cuisine for you, maybe try something else?</h4>
+          <img src="../../assets/NoRecipesImg.png" alt="empty plate" width="350rem" style="margin-top: 3rem">
+        </div>
       </div>
     </div>
   </div>
