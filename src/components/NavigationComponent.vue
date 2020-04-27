@@ -16,7 +16,6 @@
 
           <b-navbar-nav>
             <b-nav-item><router-link tag="span" to="/generate-meal-plan">Generate meal plan</router-link></b-nav-item>
-            <b-nav-item>Map ingredient to grocery products</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -34,7 +33,6 @@
           { title: 'Fast simple search', icon: '', path: '/' },
           { title: 'By ingredients', icon: '', path: '/by-ingredients' },
           { title: 'By nutrients', icon: '', path: '/by-nutrients' },
-          { title: 'Complex search', icon: '', path: '/complex' },
         ],
       }
     },
