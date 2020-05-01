@@ -72,5 +72,6 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 
 ## Wykorzystane API
 W projekcie wykorzystane zostały następujące API:
-* spoontacular - publiczne API dostarczające informacji na temat przepisów kulinarnych, na którym opiera się wyszukiwanie przepisów w aplikacji. API posiada wiele endpoint'ów, dzięki którym można uzyskiwać przepisy oraz udostępnia część funkcjonalności dla darmowych użytkowników. API jest dostępna pod witryną https://spoonacular.com/food-api
-* restdb.io - API dostarczające NoSQL bazę danych. W naszej aplikacji jest wykorzystywana do przechowywania informacji o ilości polubień danych przepisów. API pozwala na stworzenie dowolnej bazy danych oraz udostępnia endpoint'y do wykonywania podstawowych poleceń na tabelach (SELECT, UPDATE, DELETE)
+* spoontacular - publiczne API dostarczające informacji na temat przepisów kulinarnych, na którym opiera się wyszukiwanie przepisów w aplikacji. API posiada wiele endpoint'ów, dzięki którym można uzyskiwać przepisy oraz udostępnia część funkcjonalności dla darmowych użytkowników. API jest dostępne pod witryną [spoonacular.com/food-api](https://spoonacular.com/food-api)
+
+* restdb.io - API dostarczające NoSQL bazę danych. W naszej aplikacji jest wykorzystywana do przechowywania informacji o ilości polubień danych przepisów. API pozwala na stworzenie dowolnej bazy danych oraz udostępnia endpoint'y do wykonywania podstawowych poleceń na tabelach (SELECT, UPDATE, DELETE). API jest dostępne pod witryną [restdb.io/](https://restdb.io/)
