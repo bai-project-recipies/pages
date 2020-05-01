@@ -24,6 +24,7 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 <div style="text-align: justify">
 <img src="fast_search.png" alt="Szybkie wyszukiwanie" width="500rem" style="float: right;"/> Szybkie wyszukiwanie służy jednocześnie jako widok główny aplikacji. Podczas szybkiego wyszukiwania użytkownik może wpisać nazwę konkretnego posiłku i aplikacja zwróci przepisy, których nazwy zawierają podaną frazę. Jeśli nie zostanie podana żadna fraza to użytkownik otrzyma wyniki na podstawie reszty parametrów. Dostępne parametry to: kuchnia, dieta, nietolerancje, wykluczone składniki.
 </div>
+</div>
 <br>
 <a name="by_ingredients"></a>
 
