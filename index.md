@@ -43,7 +43,7 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 ## Wyszukiwanie po składnikach odżywczych
 <div>
 <div style="text-align: justify">
-<img src="by_nutrients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: right;"/> Wyszukiwanie po składnikach odżywczych umożliwia użytkownikowi na filtrowanie wyników na ich podstawie. Dostępne składniki do filtrowania wyników: Węglowodany, Proteiny, Kalorie, Tłuszcz, Cholesterol, Cukier
+<img src="by_nutrients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: right;"/> Wyszukiwanie po składnikach odżywczych umożliwia użytkownikowi na filtrowanie wyników na ich podstawie. Wymagany jest przynajmniej jeden składnik podczas wyszukiwania, w przypadku braku podanych składników, użytkownik otrzyma powiadomienie o błędzie. Dostępne składniki do filtrowania wyników: Węglowodany, Proteiny, Kalorie, Tłuszcz, Cholesterol, Cukier
 </div>
 </div>
 
