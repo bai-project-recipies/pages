@@ -15,6 +15,7 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 <img src="main_screen.png" alt="Ekran Główny" width="1000rem"/>
 <div align="center"><i>Ekran główny aplikacji</i></div>
 <a name="funkcjonalnosc"></a>
+<br>
 
 # Funkcjonalość
 <a name="fast_search"></a>
@@ -30,7 +31,9 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 
 ## Wyszukiwanie po składnikach
 <div>
+<div style="text-align: justify">
 <img src="by_ingredients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: left;"/> Wyszukiwanie po składnikach pozwala użytkownikowi na wyszukiwanie przepisów za pomocą listy składników. Dodatkowo użytkownik może wybrać czy wyszukiwanie ma uwzględnić przepisy, które maksymalizują zużycie wybranych składników lub takie, które zminimalizują użycie brakujących. Ponad to użytkownik może ustawić by podstawowe składniki takie jak cukier lub mąka były pomijane przy filtrowaniu wyników.
+</div>
 </div>
 
 
