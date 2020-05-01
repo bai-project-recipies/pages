@@ -4,7 +4,9 @@
 2. [Funkcjonalność](#funkcjonalnosc)
     1. [Szybkie wyszukiwanie](#fast_search)
     2. [Wyszukiwanie po składnikach](#by_ingredients)
+    3. [Wyszukiwanie po składnikach odżywczych](#by_nutrients)
 <a name="wstep"></a>
+<br>
 
 # Wstęp
 Aplikacja Recipies App służy do wyszukiwania przepisów kulinarnych według zadanych kryteriów. Kryteriami mogą być na przykład nazwy dań, kuchnia, dieta, nietolerancje, potrzebne składniki lub wartości odżywcze.
@@ -33,6 +35,15 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 <div>
 <div style="text-align: justify">
 <img src="by_ingredients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: left;"/> Wyszukiwanie po składnikach pozwala użytkownikowi na wyszukiwanie przepisów za pomocą listy składników. Dodatkowo użytkownik może wybrać czy wyszukiwanie ma uwzględnić przepisy, które maksymalizują zużycie wybranych składników lub takie, które zminimalizują użycie brakujących. Ponad to użytkownik może ustawić by podstawowe składniki takie jak cukier lub mąka były pomijane przy filtrowaniu wyników.
+</div>
+</div>
+<br>
+<a name="by_nutrients"></a>
+
+## Wyszukiwanie po składnikach odżywczych
+<div>
+<div style="text-align: justify">
+<img src="by_nutrients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: right;"/> Wyszukiwanie po składnikach odżywczych umożliwia użytkownikowi na filtrowanie wyników na ich podstawie. Dostępne składniki do filtrowania wyników: Węglowodany, Proteiny, Kalorie, Tłuszcz, Cholesterol, Cukier
 </div>
 </div>
 
