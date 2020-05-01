@@ -2,8 +2,9 @@
 ## Spis Treści:
 1. [Wstęp](#anchor)
 
-# Wstęp
 <a name="anchor"></a>
+
+# Wstęp
 Aplikacja Recipies App służy do wyszukiwania przepisów kulinarnych według zadanych kryteriów. Kryteriami mogą być na przykład nazwy dań, kuchnia, dieta, nietolerancje, potrzebne składniki lub wartości odżywcze.
 <br>
 Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzień lub cały tydzien, gdzie w każdym dniu przedstawione są 3 posiłki. Plan posiłków również może być spersonalizowany na przykład według ilości kalorii.
