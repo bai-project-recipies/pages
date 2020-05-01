@@ -6,6 +6,8 @@
     2. [Wyszukiwanie po składnikach](#by_ingredients)
     3. [Wyszukiwanie po składnikach odżywczych](#by_nutrients)
     4. [Tworzenie planu odżywaiania](#meal_plan)
+    5. [Karty przepisów](#recipe)
+3. [Wykorzystane API](#stack)
 <a name="wstep"></a>
 <br>
 
@@ -56,28 +58,19 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 <img src="meal_plan.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: left;"/> Aplikacja posiada funkcjonalność polegającą na generowaniu plan posiłków dla użytkownika. Podczas tworzenia planu użytkownik może zdecydować według jakiej diety mają być dobierane posiłki oraz jakich składników lub alergenów wyszukiwarka ma unikać. Ponadto użytkownik może ustalić sumaryczną ilość kalorii na dany dzien oraz czy plan ma być generowany na cały tydzień czy tylko jeden dzień.
 </div>
 </div>
+<br>
+<a name="recipe"></a>
 
+## Karty przepisów
+<div>
+<div style="text-align: justify">
+<img src="recipe.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: right;"/> Główną funkcjonalnością aplikacji jest przedstawianie użytkownikowi przepisów. Przepisy są wyświetlane po wciśnieciu przycisku `Go to recipe` na karcie. Wyświetlony przepis informuje użytkownika o ilości składników, które można zamieniać pomiędzy jednostkami metrycznymi i amerkańskimi. Dodatkowo wyświetlane są kroki danego przepisu oraz wyświetlone jest zdjęcie dania.
+</div>
+</div>
+<br>
+<a name="stack"></a>
 
-
-## test index
-## test index
-## test index
-## test index
-## test index
-## test index
-## test index
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a name="anchor"></a>test anchor
+## Wykorzystane API
+W projekcie wykorzystane zostały następujące API:
+* spoontacular - publiczne API dostarczające informacji na temat przepisów kulinarnych, na którym opiera się wyszukiwanie przepisów w aplikacji. API posiada wiele endpoint'ów, dzięki którym można uzyskiwać przepisy oraz udostępnia część funkcjonalności dla darmowych użytkowników. API jest dostępna pod witryną https://spoonacular.com/food-api
+* restdb.io - API dostarczające NoSQL bazę danych. W naszej aplikacji jest wykorzystywana do przechowywania informacji o ilości polubień danych przepisów. API pozwala na stworzenie dowolnej bazy danych oraz udostępnia endpoint'y do wykonywania podstawowych poleceń na tabelach (SELECT, UPDATE, DELETE)
