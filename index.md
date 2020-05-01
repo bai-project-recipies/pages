@@ -7,7 +7,7 @@
     3. [Wyszukiwanie po składnikach odżywczych](#by_nutrients)
     4. [Tworzenie planu odżywaiania](#meal_plan)
     5. [Karty przepisów](#recipe)
-3. [Wykorzystane API](#stack)
+3. [Wykorzystane technologie](#stack)
 <a name="wstep"></a>
 <br>
 
@@ -71,7 +71,8 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 <a name="stack"></a>
 
 ## Wykorzystane API
-W projekcie wykorzystane zostały następujące API:
 * spoontacular - publiczne API dostarczające informacji na temat przepisów kulinarnych, na którym opiera się wyszukiwanie przepisów w aplikacji. API posiada wiele endpoint'ów, dzięki którym można uzyskiwać przepisy oraz udostępnia część funkcjonalności dla darmowych użytkowników. API jest dostępne pod witryną [spoonacular.com/food-api](https://spoonacular.com/food-api)
 
 * restdb.io - API dostarczające NoSQL bazę danych. W naszej aplikacji jest wykorzystywana do przechowywania informacji o ilości polubień danych przepisów. API pozwala na stworzenie dowolnej bazy danych oraz udostępnia endpoint'y do wykonywania podstawowych poleceń na tabelach (SELECT, UPDATE, DELETE). API jest dostępne pod witryną [restdb.io](https://restdb.io/)
+
+* vue.js - Vue.js, podobnie jak React.js czy Angular, należy do rodziny najbardziej popularnych frameworków JavaScript służących do budowania interfejsów użytkownika. Pozwala na tworzenie zarówno prostych komponentów, jak i zaawansowanych i skalowalnych aplikacji typu SPA (Single-Page Application) przy wykorzystaniu dodatkowych narzędzi i bibliotek. Framework jest dostępny pod witryną [vue.js](https://vuejs.org/)
