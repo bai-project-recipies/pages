@@ -16,7 +16,7 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 # Funkcjonalość
 ## Szybkie Wyszukiwanie
 <div>
-<img src="main_screen.png" alt="drawing" width="500rem" style="float: right;"/> Szybkie wyszukiwanie służy jednocześnie jako widok główny aplikacji. Podczas szybkiego wyszukiwania użytkownik może wpisać nazwę konkretnego posiłku i aplikacja zwróci przepisy, których nazwy zawierają podaną frazę. 
+<img src="main_screen.png" alt="drawing" style="float: right;"/> Szybkie wyszukiwanie służy jednocześnie jako widok główny aplikacji. Podczas szybkiego wyszukiwania użytkownik może wpisać nazwę konkretnego posiłku i aplikacja zwróci przepisy, których nazwy zawierają podaną frazę. 
 </div>
 [some text](#anchor)
 
