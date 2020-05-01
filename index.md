@@ -12,7 +12,6 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 <br>
 <img src="main_screen.png" alt="drawing" width="1000rem"/>
 <div align="center"><i>Ekran główny aplikacji</i></div>
-<br>
 
 # Funkcjonalość
 ## Szybkie Wyszukiwanie
