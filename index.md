@@ -5,6 +5,7 @@
     1. [Szybkie wyszukiwanie](#fast_search)
     2. [Wyszukiwanie po składnikach](#by_ingredients)
     3. [Wyszukiwanie po składnikach odżywczych](#by_nutrients)
+    4. [Tworzenie planu odżywaiania](#meal_plan)
 <a name="wstep"></a>
 <br>
 
@@ -43,9 +44,19 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 ## Wyszukiwanie po składnikach odżywczych
 <div>
 <div style="text-align: justify">
-<img src="by_nutrients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: right;"/> Wyszukiwanie po składnikach odżywczych umożliwia użytkownikowi na filtrowanie wyników na ich podstawie. Wymagany jest przynajmniej jeden składnik podczas wyszukiwania, w przypadku braku podanych składników, użytkownik otrzyma powiadomienie o błędzie. Dostępne składniki do filtrowania wyników: Węglowodany, Proteiny, Kalorie, Tłuszcz, Cholesterol, Cukier
+<img src="by_nutrients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: right;"/> Wyszukiwanie po składnikach odżywczych umożliwia użytkownikowi na filtrowanie wyników na ich podstawie. Wymagany jest przynajmniej jeden składnik podczas wyszukiwania, w przypadku braku podanych składników, użytkownik otrzyma powiadomienie o błędzie. Dostępne składniki do filtrowania wyników: Węglowodany, Proteiny, Kalorie, Tłuszcz, Cholesterol, Cukier.
 </div>
 </div>
+<br>
+<a name="meal_plan"></a>
+
+## Tworzenie planu odżywiania
+<div>
+<div style="text-align: justify">
+<img src="meal_plan.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: left;"/> Aplikacja posiada funkcjonalność polegającą na generowaniu plan posiłków dla użytkownika. Podczas tworzenia planu użytkownik może zdecydować według jakiej diety mają być dobierane posiłki oraz jakich składników lub alergenów wyszukiwarka ma unikać. Ponadto użytkownik może ustalić sumaryczną ilość kalorii na dany dzien oraz czy plan ma być generowany na cały tydzień czy tylko jeden dzień.
+</div>
+</div>
+
 
 
 ## test index
