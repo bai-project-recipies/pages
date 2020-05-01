@@ -12,7 +12,7 @@ Aplikacja Recipies App służy do wyszukiwania przepisów kulinarnych według za
 Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzień lub cały tydzien, gdzie w każdym dniu przedstawione są 3 posiłki. Plan posiłków również może być spersonalizowany na przykład według ilości kalorii.
 <br>
 <br>
-<img src="main_screen.png" alt="drawing" width="1000rem"/>
+<img src="main_screen.png" alt="Ekran Główny" width="1000rem"/>
 <div align="center"><i>Ekran główny aplikacji</i></div>
 <a name="funkcjonalnosc"></a>
 
@@ -21,15 +21,15 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 
 ## Szybkie Wyszukiwanie
 <div>
-<div>
-<img src="fast_search.png" alt="drawing" width="500rem" style="float: right;"/><div align="center"><i>Szybkie wyszukiwanie</i></div></div> Szybkie wyszukiwanie służy jednocześnie jako widok główny aplikacji. Podczas szybkiego wyszukiwania użytkownik może wpisać nazwę konkretnego posiłku i aplikacja zwróci przepisy, których nazwy zawierają podaną frazę. Jeśli nie zostanie podana żadna fraza to użytkownik otrzyma wyniki na podstawie reszty parametrów. Dostępne parametry to: kuchnia, dieta, nietolerancje, wykluczone składniki.
+<div style="text-align: justify">
+<img src="fast_search.png" alt="Szybkie wyszukiwanie" width="500rem" style="float: right;"/> Szybkie wyszukiwanie służy jednocześnie jako widok główny aplikacji. Podczas szybkiego wyszukiwania użytkownik może wpisać nazwę konkretnego posiłku i aplikacja zwróci przepisy, których nazwy zawierają podaną frazę. Jeśli nie zostanie podana żadna fraza to użytkownik otrzyma wyniki na podstawie reszty parametrów. Dostępne parametry to: kuchnia, dieta, nietolerancje, wykluczone składniki.
 </div>
 <br>
 <a name="by_ingredients"></a>
 
 ## Wyszukiwanie po składnikach
 <div>
-<img src="by_ingredients.png" alt="drawing" width="500rem" style="float: left;"/> Wyszukiwanie po składnikach pozwala użytkownikowi na wyszukiwanie przepisów za pomocą listy składników. Dodatkowo użytkownik może wybrać czy wyszukiwanie ma uwzględnić przepisy, które maksymalizują zużycie wybranych składników lub takie, które zminimalizują użycie brakujących. Ponad to użytkownik może ustawić by podstawowe składniki takie jak cukier lub mąka były pomijane przy filtrowaniu wyników.
+<img src="by_ingredients.png" alt="Wyszukiwanie po składnikach" width="500rem" style="float: left;"/> Wyszukiwanie po składnikach pozwala użytkownikowi na wyszukiwanie przepisów za pomocą listy składników. Dodatkowo użytkownik może wybrać czy wyszukiwanie ma uwzględnić przepisy, które maksymalizują zużycie wybranych składników lub takie, które zminimalizują użycie brakujących. Ponad to użytkownik może ustawić by podstawowe składniki takie jak cukier lub mąka były pomijane przy filtrowaniu wyników.
 </div>
 
 
