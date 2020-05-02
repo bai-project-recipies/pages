@@ -8,6 +8,7 @@
     4. [Tworzenie planu odżywaiania](#meal_plan)
     5. [Karty przepisów](#recipe)
 3. [Wykorzystane technologie](#stack)
+4. [Autorzy](#authors)
 <a name="wstep"></a>
 <br>
 
@@ -76,3 +77,10 @@ Dodatkowo aplikacja posiada możliwość wygenerowania planu z posiłkami na dzi
 * restdb.io - API dostarczające NoSQL bazę danych. W naszej aplikacji jest wykorzystywana do przechowywania informacji o ilości polubień danych przepisów. API pozwala na stworzenie dowolnej bazy danych oraz udostępnia endpoint'y do wykonywania podstawowych poleceń na tabelach (SELECT, UPDATE, DELETE). API jest dostępne pod witryną [restdb.io](https://restdb.io/).
 
 * vue.js - Vue.js, podobnie jak React.js czy Angular, należy do rodziny najbardziej popularnych frameworków JavaScript służących do budowania interfejsów użytkownika. Pozwala na tworzenie zarówno prostych komponentów, jak i zaawansowanych i skalowalnych aplikacji typu SPA (Single-Page Application) przy wykorzystaniu dodatkowych narzędzi i bibliotek. Framework jest dostępny pod witryną [vue.js](https://vuejs.org/).
+<br>
+<a name="authors"></a>
+
+## Autorzy
+* Justyna Pietryga [github](https://github.com/justyna-pietryga)
+* Michał Rosicki [github](https://github.com/mrosicki)
+* Marek Nalepka [github](https://github.com/Nalepsky2)
